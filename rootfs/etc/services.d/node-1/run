@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "* Starting node 1..."
+geth --identity "node1" --genesis /etc/eth/customGenesis.json --rpc --rpcport "8000" --rpccorsdomain "*" --datadir "/data/node-1" --port "30303" --nodiscover --ipcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" --rpcapi "db,eth,net,web3" --autodag --networkid 1900 --nat "any" console
